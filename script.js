@@ -70,5 +70,17 @@ document.addEventListener('DOMContentLoaded', () => {
         freeze();
     }
 
+    startBtn.addEventListener('click', () => {
+        if(timerId){
+            clearInterval(timerId);
+            timerId = null;
+        } else {
+            draw();
+            timerId = setinterval(moveDown, 1000);
+            nextRandom = Math.floor(Math.random() * theTetrominoes.length);
+            displayShape();
+        }
+    })
+
 
 })
