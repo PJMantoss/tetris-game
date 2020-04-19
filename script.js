@@ -245,5 +245,9 @@ document.addEventListener('DOMContentLoaded', () => {
         menu.style.display = 'flex';
     }) 
 
+    span.addEventListener('click', () => {
+        menu.style.display = 'none';
+    })
+
 
 })
