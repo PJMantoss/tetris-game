@@ -4,8 +4,25 @@ document.addEventListener('DOMContentLoaded', () => {
     let startBtn = document.querySelector('.button');
     const hamburgerBtn = document.querySelector('.toggler');
     const menu = document.querySelector('.menu');
-    const width = 10
-    const height = 10
+    const span = document.getElementsByClassName('close')[0];
+    const scoreDisplay = document.querySelector('.score-display');
+    const linesDisplay = document.querySelector('.lines-score');
+
+    let currentIndex = 0;
+    let currentRotation = 0;
+    const width = 10;
+    const score = 0;
+    const lines = 0;
+    let timerId;
+    let nextRandom = 0;
+
+    const colors = [
+        "url(images/)",
+        "url(images/)",
+        "url(images/)",
+        "url(images/)",
+        "url(images/)"
+    ]
 
     //Tetrominoes
     const lTetromino = [
