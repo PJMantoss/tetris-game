@@ -149,7 +149,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if(current.some(index => squares[currentPosition + index + width].classList.contains('block3') ||
         squares[currentPosition + index + width].classList.contains('block2'))){
             //make it block2
-            current.forEach(index => squares[currentPosition + index].classList.add('block2'))
+            current.forEach(index => squares[index + currentPosition].classList.add('block2'))
             //start a new tetromino falling
             random = nextRandom;
             nextRandom = Math.floor(Math.random() * theTetrominoes.length);
@@ -184,8 +184,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     //Show previous Tetromino in score display
     const displayWidth = 4;
-    const displaySquares = document.querySelectorAll('previous-grid div');
-    let displayIndex = 0;
+    const displayIndex = 0;
 
     const smallTetrominoes = [
         [1, displayWidth+1, displayWidth*2+1, 2], //lTetromino
