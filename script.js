@@ -1,5 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
     const grid = document.querySelector('.grid');
+    let squares = Array.from(document.querySelectorAll('div'));
+    let startBtn = document.querySelector('.button');
+    const hamburgerBtn = document.querySelector('.toggler');
+    const menu = document.querySelector('.menu');
     const width = 10
     const height = 10
 
