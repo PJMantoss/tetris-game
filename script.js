@@ -194,5 +194,20 @@ document.addEventListener('DOMContentLoaded', () => {
         [1, displayWidth+1, displayWidth*2+1, displayWidth*3+1] //iTetromino
     ]
 
+    displayShape = () => {
+        displaySquares.forEach(square => {
+            square.classList.remove('block');
+            square.style.backgroundImage = 'none';
+        })
+
+        smallTetrominoes[nextRandom].forEach(index => {
+            displaySquares[displayIndex + index].classList.add('block');
+            displaySquares[displayIndex + index].style.backgroundImage = colors[nextRandom];
+        })
+    }
+
+    //Add score
+    
+
 
 })
