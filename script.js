@@ -234,7 +234,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     squares[index].classList.remove('block2') || squares[index].classList.remove('block')
                 })
 
-                //Splice array
+                //Splice Array
                 const squaresRemoved = squares.splice(currentIndex, width);
                 squaresRemoved.concat(squares);
                 squares.forEach(cell => grid.appendChild(cell))
