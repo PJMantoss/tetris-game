@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
         squares[currentPosition + index].style.backgroundImage = 'none';
     }
 
-    //Move down on loop
+    //Move shape down on loop
     moveDown = () => {
         undraw();
         currentPosition = currentPosition += width;
