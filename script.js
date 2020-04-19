@@ -22,7 +22,20 @@ document.addEventListener('DOMContentLoaded', () => {
         "url(images/purple_block.png)",
         "url(images/peach_block.png)",
         "url(images/yellow_block.png)"
-    ]
+    ];
+
+    // Assign functions to keycodes
+    control = e => {
+        if (e.keyCode === 39){
+            moveRight();
+        } else if (e.keyCode === 38){
+            rotate();
+        } else if (e.keyCode === 37){
+            moveLeft();
+        } else if (e.keyCode === 40){
+            moveDown();
+        }
+    }
 
     //Tetrominoes
     const lTetromino = [
