@@ -11,6 +11,18 @@ div {
     width: 200px;
 }
 
+.previous-grid {
+    display: flex;
+    flex-wrap: wrap;
+    height: 80px;
+    width: 80px;
+}
+
+.previous-shape {
+    height: 80px;
+    width: 80px;
+}
+
 .block {
     background: blue;
 }
