@@ -149,6 +149,8 @@ document.addEventListener('DOMContentLoaded', () => {
         squares[currentPosition + index + width].classList.contains('block2'))){
             //make it block2
             current.forEach(index => squares[currentPosition + index].classList.add('block2'))
+            //start a new tetromino falling
+            random = nextRandom;
         }
     }
 
