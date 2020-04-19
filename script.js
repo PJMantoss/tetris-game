@@ -56,5 +56,11 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     }
 
+    //Undraw the shape
+    undraw = () => {
+        squares[currentPosition + index].classList.remove('block');
+        squares[currentPosition + index].style.backgroundImage = 'none';
+    }
+
 
 })
