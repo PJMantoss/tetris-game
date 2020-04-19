@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const displaySquares = document.querySelectorAll('.previous-grid div')
     let squares = Array.from(grid.querySelectorAll('div'));
     let startBtn = document.querySelector('button');
-    const hamburgerBtn = document.querySelector('.toggler');
+    let hamburgerBtn = document.querySelector('.toggler');
     const menu = document.querySelector('.menu');
     const span = document.getElementsByClassName('close')[0];
     const scoreDisplay = document.querySelector('.score-display');
@@ -95,8 +95,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     //Undraw the shape
     undraw = () => {
-        squares[currentPosition + index].classList.remove('block');
-        squares[currentPosition + index].style.backgroundImage = 'none';
+        current.forEach(index => {
+            squares[currentPosition + index].classList.remove('block');
+            squares[currentPosition + index].style.backgroundImage = 'none';
+        })
     }
 
     //Move shape down on loop
@@ -113,7 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
             timerId = null;
         } else {
             draw();
-            timerId = setinterval(moveDown, 1000);
+            timerId = setInterval(moveDown, 1000);
             nextRandom = Math.floor(Math.random() * theTetrominoes.length);
             displayShape();
         }
@@ -124,7 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
         undraw();
         const isAtRightEdge = current.some(index => (currentPosition + index) % width === width - 1);
         if(!isAtRightEdge) currentPosition += 1;
-        if(curretn.some(index => squares[currentPosition + index].classList.contains('block2'))){
+        if(current.some(index => squares[currentPosition + index].classList.contains('block2'))){
             currentPosition -= 1;
         }
 
@@ -136,7 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
         undraw();
         const isAtLeftEdge = current.some(index => (currentPosition + index) % width === 0);
         if(!isAtLeftEdge) currentPosition -= 1;
-        if(curretn.some(index => squares[currentPosition + index].classList.contains('block2'))){
+        if(current.some(index => squares[currentPosition + index].classList.contains('block2'))){
             currentPosition += 1;
         }
 
