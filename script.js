@@ -231,9 +231,19 @@ document.addEventListener('DOMContentLoaded', () => {
                     squares[index].style.backgroundImage = 'none';
                     squares[index].classList.remove('block2') || squares[index].classList.remove('block')
                 })
+
+                //Splice array
+                const squaresRemoved = squares.splice(currentIndex, width);
+                squaresRemoved.concat(squares);
+                squares.forEach(cell => grid.appendChild(cell))
             }
         }
     }
+
+    //Styling Event Listeners
+    hamburgerBtn.addEventListener('click', () => {
+        menu.style.display = 'flex';
+    }) 
 
 
 })
