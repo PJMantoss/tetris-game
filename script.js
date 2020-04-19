@@ -151,8 +151,40 @@ document.addEventListener('DOMContentLoaded', () => {
             current.forEach(index => squares[currentPosition + index].classList.add('block2'))
             //start a new tetromino falling
             random = nextRandom;
+            nextRandom = Math.floor(Math.random() * theTetrominoes.length);
+            current = theTetrominoes[random][currentRotation];
+            currentPosition = 4;
+            draw();
+            displayShape();
+            addScore();
+            gameOver();
         }
     }
+
+    freeze();
+
+    //Rotate the Tetromino
+    rotate = () => {
+        undraw();
+        currentRotation++;
+        if(currentRotation === current.length){
+            currentRotation = 0;
+        }
+        current = theTetrominoes[random][currentRotation];
+        draw();
+    }
+
+    gameOver = () => {
+        if(curretn.some(index => squares[currentPosition + index].classList.contains('block2'))){
+            scoreDisplay.innerHTML = 'End';
+            clearInterval(timerId);
+        }
+    }
+
+    //Show previous Tetromino in score display
+    const displayWidth = 4;
+    const displaySquares = document.querySelectorAll('previous-grid div');
+    let displayIndex = 0;
 
 
 })
