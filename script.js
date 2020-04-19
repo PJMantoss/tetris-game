@@ -42,7 +42,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const theTetrominoes = [lTetromino, zTetromino, tTetromino, oTetromino, iTetromino];
 
     //Randomly Select Tetromino
-    let random = Math.floor(Math.random() * theTetrominoes.length)
+    let random = Math.floor(Math.random() * theTetrominoes.length);
+    let current = theTetrominoes[random][currentRotation];
+
+    //Move the Tetromino down
 
 
 })
