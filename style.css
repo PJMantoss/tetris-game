@@ -4,3 +4,10 @@ div {
     height: 20px;
 }
 
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    background: blue;
+    height: 400px;
+    width: 200px;
+}
