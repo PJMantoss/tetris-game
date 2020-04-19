@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const grid = document.querySelector('.grid');
-    let squares = Array.from(document.querySelectorAll('div'));
+    let squares = Array.from(grid.querySelectorAll('div'));
     let startBtn = document.querySelector('.button');
     const hamburgerBtn = document.querySelector('.toggler');
     const menu = document.querySelector('.menu');
