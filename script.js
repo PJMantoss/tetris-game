@@ -37,6 +37,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    document.addEventListener('keyup', control);
+
     //Tetrominoes
     const lTetromino = [
         [1, width+1, width*2+1, 2],
@@ -115,6 +117,40 @@ document.addEventListener('DOMContentLoaded', () => {
             displayShape();
         }
     })
+
+    //Move left and prevent collisions with shapes moving left
+    moveRight = () => {
+        undraw();
+        const isAtRightEdge = current.some(index => (currentPosition + index) % width === width - 1);
+        if(!isAtRightEdge) currentPosition += 1;
+        if(curretn.some(index => squares[currentPosition + index].classList.contains('block2'))){
+            currentPosition -= 1;
+        }
+
+        draw();
+    }
+
+    //Move right and prevent collisions with shapes moving right
+    moveLeft = () => {
+        undraw();
+        const isAtLeftEdge = current.some(index => (currentPosition + index) % width === 0);
+        if(!isAtLeftEdge) currentPosition -= 1;
+        if(curretn.some(index => squares[currentPosition + index].classList.contains('block2'))){
+            currentPosition += 1;
+        }
+
+        draw();
+    }
+
+    //Freeze the shape
+    freeze = () => {
+        //If block has settled
+        if(current.some(index => squares[currentPosition + index + width].classList.contains('block3') ||
+        squares[currentPosition + index + width].classList.contains('block2'))){
+            //make it block2
+            current.forEach(index => squares[currentPosition + index].classList.add('block2'))
+        }
+    }
 
 
 })
