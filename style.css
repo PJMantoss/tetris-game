@@ -11,3 +11,7 @@ div {
     height: 400px;
     width: 200px;
 }
+
+.block {
+    background: blue;
+}
