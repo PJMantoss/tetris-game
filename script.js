@@ -175,7 +175,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     gameOver = () => {
-        if(curretn.some(index => squares[currentPosition + index].classList.contains('block2'))){
+        if(current.some(index => squares[currentPosition + index].classList.contains('block2'))){
             scoreDisplay.innerHTML = 'End';
             clearInterval(timerId);
         }
@@ -208,7 +208,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     //Add score
     addScore = () => {
-        for (let currentIndex = 0; currentIndex < 199; currentIndex += width){
+        for (currentIndex = 0; currentIndex < 199; currentIndex += width){
             const row = [
                 currentIndex,
                 currentIndex+1,
