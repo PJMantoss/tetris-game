@@ -3,7 +3,7 @@
 .results {
     display: block;
     max-width: 200px;
-    margin: 20px auto;
+    margin: 20px auto 175px;
 }
 
 .previous-shape, .game {
