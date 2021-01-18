@@ -1,19 +1,9 @@
 
 
-.results {
+main {
     display: block;
     max-width: 200px;
     margin: 20px auto 150px;
-}
-
-.previous-shape {
-    margin: 0 auto 40px;
-}
-
-.game {
-    display: block;
-    max-width: 200px;
-    margin: 0 auto 50px;
 }
 
 div {
