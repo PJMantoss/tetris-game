@@ -1,5 +1,9 @@
-body {
-    align-items: center;
+
+
+.results {
+    display: block;
+    max-width: 200px;
+    margin: auto;
 }
 
 div {
