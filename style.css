@@ -1,9 +1,24 @@
 
 
 main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.results {
+    
+}
+
+.previous-shape {
+    margin: 0 auto 40px;
+}
+
+.game {
     display: block;
     max-width: 200px;
-    margin: 20px auto 150px;
+    margin: 0 auto 50px;
 }
 
 div {
