@@ -3,14 +3,19 @@
 .results {
     display: block;
     max-width: 200px;
-    margin: 20px auto 175px;
+    margin: 20px auto 150px;
 }
 
-.previous-shape, .game {
+.game {
     display: block;
     max-width: 300px;
     margin: auto;
 }
+
+.previous-shape {
+    margin: 0 auto 40px;
+}
+
 div {
     background: yellow;
     width: 20px;
