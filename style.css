@@ -25,6 +25,7 @@ body {
     width: 150px;
     outline: none;
     padding: 8px 16px;
+    background: orange;
 }
 
 .previous-shape {
