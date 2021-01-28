@@ -17,6 +17,8 @@ body {
     background: transparent;
     width: 200px;
     margin: 40px 0 80px;
+    display: flex;
+    align-items: center;
 }
 
 .previous-shape {
