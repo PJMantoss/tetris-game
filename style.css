@@ -1,12 +1,5 @@
 
 
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .results {
     position: relative;
     display: inherit;
