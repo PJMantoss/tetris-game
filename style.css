@@ -14,7 +14,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    bottom: 40px auto 80px;
+    margin: 40px auto 80px;
 }
 
 .previous-shape {
