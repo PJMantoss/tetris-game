@@ -6,10 +6,13 @@
 body {
     background: black;
     color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .results {
-    width: 100%;
+    width: 50%;
     margin: 40px 0 80px;
 }
 
