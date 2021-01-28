@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+body {
+    background: black;
+    color: white;
+}
+
 .results {
     position: relative;
     display: inherit;
