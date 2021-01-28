@@ -35,6 +35,7 @@ body {
 
 button:hover {
     background: green;
+    color: white;
 }
 
 .previous-shape {
