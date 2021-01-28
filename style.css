@@ -4,7 +4,7 @@
 }
 
 body {
-    max-width: 900px;
+    max-width: 80%;
     background: black;
     color: white;
 }
@@ -88,11 +88,4 @@ div {
 
 .block3 {
     background: green;
-}
-
-@media(max-width: 660px){
-    main {
-        width: 80%;
-        flex-direction: column;
-    }
 }
