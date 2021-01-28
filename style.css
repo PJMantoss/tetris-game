@@ -18,13 +18,13 @@ body {
 }
 
 .previous-shape {
-    margin: 50px auto 40px;
+    margin: 50px 0 40px;
 }
 
 .game {
     display: block;
     max-width: 200px;
-    margin: 0 auto 50px;
+    margin: 0 0 50px;
 }
 
 div {
