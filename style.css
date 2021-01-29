@@ -4,7 +4,7 @@
 }
 
 body {
-    max-width: 80%;
+    /* max-width: 80%; */
     background: black;
     color: white;
 }
@@ -19,8 +19,8 @@ main {
 
 @media(max-width: 660px){
     main {
-        width: 50%;
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
 }
 
