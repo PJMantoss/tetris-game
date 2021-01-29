@@ -17,10 +17,10 @@ main {
     margin: auto;
 }
 
-@media only screen and (max-width: 660px){
+@media only screen and (max-width: 400px){
     main {
-        display: flex;
         flex-direction: column;
+        align-items: center;
     }
 }
 
