@@ -17,7 +17,12 @@ main {
     margin: auto;
 }
 
-@media(max-width: 660px){}
+@media(max-width: 660px){
+    main {
+        width: 90%;
+        display: block;
+    }
+}
 
 .results {
     background: transparent;
